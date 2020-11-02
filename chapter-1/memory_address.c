@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include <stdio.h>
 
 int main()
@@ -5,10 +6,11 @@ int main()
     int a = 100;
     float b = 34.4566;
     char yes = 'y';
+    int *pa = NULL;
 
     printf("Address of a = %p b = %p yes = %p\n", &a, &b, &yes);
 
-    int *pa = &a;
+    pa = &a;
     float *pb = &b;
     char *pyes = &yes;
 
